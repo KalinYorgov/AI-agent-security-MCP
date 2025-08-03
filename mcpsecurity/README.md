@@ -1,6 +1,6 @@
 # MCP Security Scanner Server
 
-A Model Context Protocol (MCP) server that provides security functionality for detecting and redacting sensitive information in text content.
+A Model Context Protocol (MCP) server that provides defensive security functionality for AI agents, focusing on detecting and redacting sensitive information in text content.
 
 ## Features
 
@@ -26,8 +26,9 @@ A Model Context Protocol (MCP) server that provides security functionality for d
 ## Installation
 
 ### Prerequisites
-- Python 3.10 or higher
+- Python 3.10 or higher (recommended: 3.11)
 - The MCP Python SDK
+- macOS with Homebrew (for the provided installation commands)
 
 ### Setup
 
@@ -68,7 +69,7 @@ Add the following configuration:
 }
 ```
 
-**Important**: Replace `/ABSOLUTE/PATH/TO/YOUR/PROJECT/` with the actual path to your project directory.
+**Important**: Replace `/ABSOLUTE/PATH/TO/YOUR/PROJECT/` with the actual absolute path to your project directory (e.g., `/Users/username/Projects/Agent-Security-MCP/mcpsecurity/mcp_server.py`).
 
 ### 2. Restart Claude Desktop
 
@@ -162,10 +163,11 @@ If you encounter Python version errors:
 
 ## Security Notes
 
-- This server is designed for local use and security analysis
-- Patterns are based on common formats and may need customization for specific use cases
-- Always test with your specific data formats before relying on the detection
-- The server does not store or transmit any data - all processing is local
+- **Defensive Security Only**: This server is designed for defensive security analysis and data protection
+- **Local Processing**: All data processing happens locally - no data is stored or transmitted
+- **Pattern Customization**: Detection patterns are based on common formats and may need customization for specific use cases
+- **Testing Required**: Always test with your specific data formats before relying on the detection
+- **Privacy Focused**: Designed to help prevent data leaks and protect sensitive information
 
 ## Development
 
